@@ -18,17 +18,7 @@ public class Habilidades {
     private String nombreH; 
     private int porcentaje;
     private String img; 
-    
-    
-    /*
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id_hab")
-    int id; 
-    private String nombreH; 
-    private int porcentaje;
-    private String img; 
-    */
+   
  
 
     // constructores

@@ -20,13 +20,7 @@ public class Proyecto {
     private String img;
     private int anocomienzo;
     
-    /*
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id_hab")
-    int id; 
-    */
-
+ 
     //constructores
     public Proyecto() {
     }

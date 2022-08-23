@@ -25,18 +25,7 @@ public class Persona {
     private String acercaDe;
     
     
-    /*
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id_hab")
-    int id; 
-    private String nombreH; 
-    private int porcentaje;
-    private String img; 
-    */
-    
-    
-    
+   
     //constructores
     public Persona() {
     }
