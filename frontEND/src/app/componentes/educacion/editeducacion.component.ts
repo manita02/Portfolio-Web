@@ -19,7 +19,7 @@ export class EditeducacionComponent implements OnInit {
       data => {
         this.educacion = data;
       }, err => {
-        alert("ERROR ---> URL demasiado larga (utilicé un acortardor de URL online) ó CAMPO VACÍO ó Tiempo límite excedido");
+        alert("ERROR ---> CAMPO VACÍO ó Tiempo de conexión a expirado(loguéese nuevamente)");
         this.router.navigate(['']);
       }
     )
@@ -34,7 +34,7 @@ export class EditeducacionComponent implements OnInit {
           alert("Educación actualizada");
           this.router.navigate(['']);
         }, err => {
-          alert("ERROR ---> URL demasiado larga (utilicé un acortardor de URL online) ó CAMPO VACÍO ó Tiempo límite excedido");
+          alert("ERROR ---> CAMPO VACÍO ó Tiempo de conexión a expirado(loguéese nuevamente)");
           this.router.navigate(['']);
         })
 

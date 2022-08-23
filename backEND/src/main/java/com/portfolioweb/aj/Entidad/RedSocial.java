@@ -16,13 +16,6 @@ public class RedSocial {
     private String nombreRedS;
     private String img;
     private String link; 
-
-    /*
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id_hab")
-    int id; 
-    */
     
     //constructores
     public RedSocial() {

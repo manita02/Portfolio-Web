@@ -19,16 +19,6 @@ public class Banner {
     private String img;
     
     
-   /*
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id_hab")
-    int id; 
-    */
-    
-    
-    
-
     //constructores
     public Banner() {
     }

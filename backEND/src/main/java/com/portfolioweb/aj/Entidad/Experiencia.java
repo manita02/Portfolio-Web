@@ -17,13 +17,8 @@ public class Experiencia {
     private String descripcionE;
     private String img;
     private int anocomienzo;
-    
-    /*
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id_hab")
-    int id; 
-    */
+   
+  
 
     //Constructores
     public Experiencia() {

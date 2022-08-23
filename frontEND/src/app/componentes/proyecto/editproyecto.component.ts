@@ -19,7 +19,7 @@ export class EditproyectoComponent implements OnInit {
       data =>{
         this.proyecto = data; 
       }, err => {
-        alert("ERROR ---> URL demasiado larga (utilicé un acortardor de URL online) ó CAMPO VACÍO ó Tiempo límite excedido"); 
+        alert("ERROR ---> CAMPO VACÍO ó Tiempo de conexión a expirado(loguéese nuevamente)");
         this.router.navigate(['']);
       }
     )
@@ -34,7 +34,7 @@ export class EditproyectoComponent implements OnInit {
          alert("Proyecto actualizado");
          this.router.navigate(['']);  
         }, err =>{
-          alert("ERROR ---> URL demasiado larga (utilicé un acortardor de URL online) ó CAMPO VACÍO ó Tiempo límite excedido");  
+          alert("ERROR ---> CAMPO VACÍO ó Tiempo de conexión a expirado(loguéese nuevamente)");  
           this.router.navigate(['']);
         })
     

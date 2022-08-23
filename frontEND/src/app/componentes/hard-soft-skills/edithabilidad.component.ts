@@ -19,7 +19,7 @@ export class EdithabilidadComponent implements OnInit {
       data => {
         this.habilidades = data;
       }, err => {
-        alert("ERROR ---> URL demasiado larga (utilicé un acortardor de URL online) ó CAMPO VACÍO ó Tiempo límite excedido");
+        alert("ERROR ---> CAMPO VACÍO ó Tiempo de conexión a expirado(loguéese nuevamente)");
         this.router.navigate(['']);
       }
     )
@@ -34,7 +34,7 @@ export class EdithabilidadComponent implements OnInit {
           alert("Habilidad actualizada");
           this.router.navigate(['']);
         }, err => {
-          alert("ERROR ---> URL demasiado larga (utilicé un acortardor de URL online) ó CAMPO VACÍO ó Tiempo límite excedido");
+          alert("ERROR ---> CAMPO VACÍO ó Tiempo de conexión a expirado(loguéese nuevamente)");
           this.router.navigate(['']);
         })
 
