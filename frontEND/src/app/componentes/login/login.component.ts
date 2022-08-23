@@ -42,7 +42,7 @@ export class LoginComponent implements OnInit {
         this.isLogginFail = true; 
         this.errMsj = err.error.mensaje;
         console.log(this.errMsj);
-        alert("ERROR ---> Acceso DENEGADO");  
+        alert("ERROR ---> Acceso DENEGADO!! Constraseña y/o Usuario INCORRECTOS");  
         this.router.navigate(['']); 
       })
   }
