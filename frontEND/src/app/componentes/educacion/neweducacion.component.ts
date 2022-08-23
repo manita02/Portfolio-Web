@@ -25,7 +25,7 @@ export class NeweducacionComponent implements OnInit {
       alert("Educación añadida"); 
       this.router.navigate(['']); 
     }, err =>{
-      alert("ERROR ---> URL demasiado larga (utilicé un acortardor de URL online) ó CAMPO VACÍO ó Tiempo límite excedido");  
+      alert("ERROR ---> CAMPO VACÍO ó Tiempo de conexión a expirado(loguéese nuevamente)");  
       this.router.navigate(['']);
     })
   }
