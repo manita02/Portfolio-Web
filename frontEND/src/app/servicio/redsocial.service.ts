@@ -8,7 +8,7 @@ import { Redsocial } from '../modelo/redsocial';
 })
 export class RedsocialService {
 
-  redSocialURL = 'http://localhost:8080/redesSociales/'
+  redSocialURL = 'https://backendaj.herokuapp.com/redesSociales/'
   constructor(private httpClient: HttpClient) { }
 
   public lista(): Observable<Redsocial[]>{ 
