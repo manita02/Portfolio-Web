@@ -8,32 +8,33 @@ SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,N
 -- Schema mydb
 -- -----------------------------------------------------
 -- -----------------------------------------------------
--- Schema bpxdpbrhodcaf4umv1wq
+-- Schema backendaj
 -- -----------------------------------------------------
 
 -- -----------------------------------------------------
--- Schema bpxdpbrhodcaf4umv1wq
+-- Schema backendaj
 -- -----------------------------------------------------
-CREATE SCHEMA IF NOT EXISTS `bpxdpbrhodcaf4umv1wq` DEFAULT CHARACTER SET utf8 ;
-USE `bpxdpbrhodcaf4umv1wq` ;
+CREATE SCHEMA IF NOT EXISTS `backendaj` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci ;
+USE `backendaj` ;
 
 -- -----------------------------------------------------
--- Table `bpxdpbrhodcaf4umv1wq`.`banner`
+-- Table `backendaj`.`banner`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `bpxdpbrhodcaf4umv1wq`.`banner` (
+CREATE TABLE IF NOT EXISTS `backendaj`.`banner` (
   `id_banner` INT NOT NULL AUTO_INCREMENT,
   `img` VARCHAR(1500) NULL DEFAULT NULL,
   `titulo` VARCHAR(255) NULL DEFAULT NULL,
   PRIMARY KEY (`id_banner`))
 ENGINE = InnoDB
 AUTO_INCREMENT = 2
-DEFAULT CHARACTER SET = utf8;
+DEFAULT CHARACTER SET = utf8mb4
+COLLATE = utf8mb4_0900_ai_ci;
 
 
 -- -----------------------------------------------------
--- Table `bpxdpbrhodcaf4umv1wq`.`educacion`
+-- Table `backendaj`.`educacion`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `bpxdpbrhodcaf4umv1wq`.`educacion` (
+CREATE TABLE IF NOT EXISTS `backendaj`.`educacion` (
   `id_educacion` INT NOT NULL AUTO_INCREMENT,
   `anocomienzo` INT NOT NULL,
   `descripcione` VARCHAR(255) NULL DEFAULT NULL,
@@ -42,13 +43,14 @@ CREATE TABLE IF NOT EXISTS `bpxdpbrhodcaf4umv1wq`.`educacion` (
   PRIMARY KEY (`id_educacion`))
 ENGINE = InnoDB
 AUTO_INCREMENT = 11
-DEFAULT CHARACTER SET = utf8;
+DEFAULT CHARACTER SET = utf8mb4
+COLLATE = utf8mb4_0900_ai_ci;
 
 
 -- -----------------------------------------------------
--- Table `bpxdpbrhodcaf4umv1wq`.`experiencia`
+-- Table `backendaj`.`experiencia`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `bpxdpbrhodcaf4umv1wq`.`experiencia` (
+CREATE TABLE IF NOT EXISTS `backendaj`.`experiencia` (
   `id_experiencia` INT NOT NULL AUTO_INCREMENT,
   `anocomienzo` INT NOT NULL,
   `descripcione` VARCHAR(255) NULL DEFAULT NULL,
@@ -57,13 +59,14 @@ CREATE TABLE IF NOT EXISTS `bpxdpbrhodcaf4umv1wq`.`experiencia` (
   PRIMARY KEY (`id_experiencia`))
 ENGINE = InnoDB
 AUTO_INCREMENT = 3
-DEFAULT CHARACTER SET = utf8;
+DEFAULT CHARACTER SET = utf8mb4
+COLLATE = utf8mb4_0900_ai_ci;
 
 
 -- -----------------------------------------------------
--- Table `bpxdpbrhodcaf4umv1wq`.`habilidades`
+-- Table `backendaj`.`habilidades`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `bpxdpbrhodcaf4umv1wq`.`habilidades` (
+CREATE TABLE IF NOT EXISTS `backendaj`.`habilidades` (
   `id_habilidades` INT NOT NULL AUTO_INCREMENT,
   `img` VARCHAR(1500) NULL DEFAULT NULL,
   `nombreh` VARCHAR(255) NULL DEFAULT NULL,
@@ -71,13 +74,14 @@ CREATE TABLE IF NOT EXISTS `bpxdpbrhodcaf4umv1wq`.`habilidades` (
   PRIMARY KEY (`id_habilidades`))
 ENGINE = InnoDB
 AUTO_INCREMENT = 12
-DEFAULT CHARACTER SET = utf8;
+DEFAULT CHARACTER SET = utf8mb4
+COLLATE = utf8mb4_0900_ai_ci;
 
 
 -- -----------------------------------------------------
--- Table `bpxdpbrhodcaf4umv1wq`.`persona`
+-- Table `backendaj`.`persona`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `bpxdpbrhodcaf4umv1wq`.`persona` (
+CREATE TABLE IF NOT EXISTS `backendaj`.`persona` (
   `id_persona` INT NOT NULL AUTO_INCREMENT,
   `acerca_de` VARCHAR(1500) NULL DEFAULT NULL,
   `apellido` VARCHAR(255) NULL DEFAULT NULL,
@@ -87,29 +91,30 @@ CREATE TABLE IF NOT EXISTS `bpxdpbrhodcaf4umv1wq`.`persona` (
   PRIMARY KEY (`id_persona`))
 ENGINE = InnoDB
 AUTO_INCREMENT = 2
-DEFAULT CHARACTER SET = utf8;
+DEFAULT CHARACTER SET = utf8mb4
+COLLATE = utf8mb4_0900_ai_ci;
 
 
 -- -----------------------------------------------------
--- Table `bpxdpbrhodcaf4umv1wq`.`proyecto`
+-- Table `backendaj`.`proyecto`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `bpxdpbrhodcaf4umv1wq`.`proyecto` (
+CREATE TABLE IF NOT EXISTS `backendaj`.`proyecto` (
   `id_proyecto` INT NOT NULL AUTO_INCREMENT,
   `anocomienzo` INT NOT NULL,
-  `descripcione` VARCHAR(1500) NULL DEFAULT NULL,
+  `descripcione` VARCHAR(800) NULL DEFAULT NULL,
   `img` VARCHAR(1500) NULL DEFAULT NULL,
   `link` VARCHAR(1500) NULL DEFAULT NULL,
   `nombree` VARCHAR(255) NULL DEFAULT NULL,
   PRIMARY KEY (`id_proyecto`))
 ENGINE = InnoDB
-AUTO_INCREMENT = 2
-DEFAULT CHARACTER SET = utf8;
+DEFAULT CHARACTER SET = utf8mb4
+COLLATE = utf8mb4_0900_ai_ci;
 
 
 -- -----------------------------------------------------
--- Table `bpxdpbrhodcaf4umv1wq`.`red_social`
+-- Table `backendaj`.`red_social`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `bpxdpbrhodcaf4umv1wq`.`red_social` (
+CREATE TABLE IF NOT EXISTS `backendaj`.`red_social` (
   `id_red` INT NOT NULL AUTO_INCREMENT,
   `img` VARCHAR(1500) NULL DEFAULT NULL,
   `link` VARCHAR(1500) NULL DEFAULT NULL,
@@ -117,25 +122,27 @@ CREATE TABLE IF NOT EXISTS `bpxdpbrhodcaf4umv1wq`.`red_social` (
   PRIMARY KEY (`id_red`))
 ENGINE = InnoDB
 AUTO_INCREMENT = 5
-DEFAULT CHARACTER SET = utf8;
+DEFAULT CHARACTER SET = utf8mb4
+COLLATE = utf8mb4_0900_ai_ci;
 
 
 -- -----------------------------------------------------
--- Table `bpxdpbrhodcaf4umv1wq`.`rol`
+-- Table `backendaj`.`rol`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `bpxdpbrhodcaf4umv1wq`.`rol` (
+CREATE TABLE IF NOT EXISTS `backendaj`.`rol` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `rol_nombre` VARCHAR(255) NOT NULL,
   PRIMARY KEY (`id`))
 ENGINE = InnoDB
-AUTO_INCREMENT = 3
-DEFAULT CHARACTER SET = utf8;
+AUTO_INCREMENT = 4
+DEFAULT CHARACTER SET = utf8mb4
+COLLATE = utf8mb4_0900_ai_ci;
 
 
 -- -----------------------------------------------------
--- Table `bpxdpbrhodcaf4umv1wq`.`usuario`
+-- Table `backendaj`.`usuario`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `bpxdpbrhodcaf4umv1wq`.`usuario` (
+CREATE TABLE IF NOT EXISTS `backendaj`.`usuario` (
   `id_usuario` INT NOT NULL AUTO_INCREMENT,
   `email` VARCHAR(255) NOT NULL,
   `nombre` VARCHAR(255) NOT NULL,
@@ -159,46 +166,48 @@ CREATE TABLE IF NOT EXISTS `bpxdpbrhodcaf4umv1wq`.`usuario` (
   INDEX `FK9royqn2jl2p76ynsbbrysmxcl` (`id_red` ASC) VISIBLE,
   CONSTRAINT `FK1aagjf104ugwrgqhu79allh5k`
     FOREIGN KEY (`id_experiencia`)
-    REFERENCES `bpxdpbrhodcaf4umv1wq`.`experiencia` (`id_experiencia`),
+    REFERENCES `backendaj`.`experiencia` (`id_experiencia`),
   CONSTRAINT `FK1ktc8j90plc67ljqg3j2n0sve`
     FOREIGN KEY (`id_proyecto`)
-    REFERENCES `bpxdpbrhodcaf4umv1wq`.`proyecto` (`id_proyecto`),
+    REFERENCES `backendaj`.`proyecto` (`id_proyecto`),
   CONSTRAINT `FK1q7ddprmvw4pd00t7icdj9wc7`
     FOREIGN KEY (`id_habilidades`)
-    REFERENCES `bpxdpbrhodcaf4umv1wq`.`habilidades` (`id_habilidades`),
+    REFERENCES `backendaj`.`habilidades` (`id_habilidades`),
   CONSTRAINT `FK9royqn2jl2p76ynsbbrysmxcl`
     FOREIGN KEY (`id_red`)
-    REFERENCES `bpxdpbrhodcaf4umv1wq`.`red_social` (`id_red`),
+    REFERENCES `backendaj`.`red_social` (`id_red`),
   CONSTRAINT `FKagix3q8yqktlyj3yp1sn0mcd9`
     FOREIGN KEY (`id_persona`)
-    REFERENCES `bpxdpbrhodcaf4umv1wq`.`persona` (`id_persona`),
+    REFERENCES `backendaj`.`persona` (`id_persona`),
   CONSTRAINT `FKgccnabixau0pw1n8hmxsa3cq4`
     FOREIGN KEY (`id_banner`)
-    REFERENCES `bpxdpbrhodcaf4umv1wq`.`banner` (`id_banner`),
+    REFERENCES `backendaj`.`banner` (`id_banner`),
   CONSTRAINT `FKjv3tu6vgm8jv3u9pxsf7mmqrb`
     FOREIGN KEY (`id_educacion`)
-    REFERENCES `bpxdpbrhodcaf4umv1wq`.`educacion` (`id_educacion`))
+    REFERENCES `backendaj`.`educacion` (`id_educacion`))
 ENGINE = InnoDB
-AUTO_INCREMENT = 2
-DEFAULT CHARACTER SET = utf8;
+AUTO_INCREMENT = 3
+DEFAULT CHARACTER SET = utf8mb4
+COLLATE = utf8mb4_0900_ai_ci;
 
 
 -- -----------------------------------------------------
--- Table `bpxdpbrhodcaf4umv1wq`.`usuario_rol`
+-- Table `backendaj`.`usuario_rol`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `bpxdpbrhodcaf4umv1wq`.`usuario_rol` (
+CREATE TABLE IF NOT EXISTS `backendaj`.`usuario_rol` (
   `usuario_id` INT NOT NULL,
   `rol_id` INT NOT NULL,
   PRIMARY KEY (`usuario_id`, `rol_id`),
   INDEX `FK610kvhkwcqk2pxeewur4l7bd1` (`rol_id` ASC) VISIBLE,
   CONSTRAINT `FK610kvhkwcqk2pxeewur4l7bd1`
     FOREIGN KEY (`rol_id`)
-    REFERENCES `bpxdpbrhodcaf4umv1wq`.`rol` (`id`),
+    REFERENCES `backendaj`.`rol` (`id`),
   CONSTRAINT `FKbyfgloj439r9wr9smrms9u33r`
     FOREIGN KEY (`usuario_id`)
-    REFERENCES `bpxdpbrhodcaf4umv1wq`.`usuario` (`id_usuario`))
+    REFERENCES `backendaj`.`usuario` (`id_usuario`))
 ENGINE = InnoDB
-DEFAULT CHARACTER SET = utf8;
+DEFAULT CHARACTER SET = utf8mb4
+COLLATE = utf8mb4_0900_ai_ci;
 
 
 SET SQL_MODE=@OLD_SQL_MODE;
